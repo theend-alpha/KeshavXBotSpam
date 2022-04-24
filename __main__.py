@@ -1,11 +1,11 @@
-# MightyXSpam || @MightyXSupport
+# KeshavXSpam || @BTS_CHAT_ZONE
 
 import asyncio
 import sys
 from sys import argv
 import glob
 from pathlib import Path
-from MightyXSpam.utils import load_plugins
+from KeshavXSpam.utils import load_plugins
 import logging
 from telethon import events
 from . import Mig, Mig2, Mig3, Mig4, Mig5, Mig6, Mig7, Mig8, Mig9, Mig10
@@ -14,7 +14,7 @@ logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s'
                     level=logging.WARNING)
 
 
-path = "MightyXSpam/plugins/*.py"
+path = "KeshavXSpam/plugins/*.py"
 files = glob.glob(path)
 for name in files:
     with open(name) as a:
@@ -22,8 +22,8 @@ for name in files:
         plugin_name = patt.stem
         load_plugins(plugin_name.replace(".py", ""))
 
-print("Mighty X BotSpam Successfully Deployed !!")
-print("Enjoy..!  Do Visit @MightyXSupport")
+print("Keshav X BotSpam Successfully Deployed !!")
+print("Enjoy..!  Do Visit @BTS_CHAT_ZONE")
 
 if __name__ == "__main__":
     Mig.run_until_disconnected()
