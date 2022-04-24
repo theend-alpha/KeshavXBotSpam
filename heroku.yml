@@ -2,4 +2,4 @@ build:
   docker:
     Mig: Dockerfile
 run:
-  Mig: python3 -m MightyXSpam
+  Mig: python3 -m KeshavXSpam
