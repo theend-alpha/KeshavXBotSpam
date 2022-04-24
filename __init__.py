@@ -1,4 +1,4 @@
-# MightyXBotSpam || @MightyXSupport
+# KeshavXSpam || @BTS_CHAT_ZONE
 
 import os
 import sys
@@ -17,7 +17,7 @@ logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s'
 
 #version
 
-mightyversion = "v2.0.4"
+keshavversion = "v2.0.4"
 
 #values
 API_ID = config("API_ID", default=None, cast=int)
