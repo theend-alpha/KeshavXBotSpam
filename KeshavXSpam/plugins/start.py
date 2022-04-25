@@ -7,7 +7,7 @@ from .. import Mig, Mig2, Mig3, Mig4, Mig5, Mig6, Mig7, Mig8, Mig9, Mig10, ALIVE
 from KeshavXSpam.plugins.help import *
 
 
-MIG_IMG = ALIVE_PIC if ALIVE_PIC else "https://telegra.ph/file/2ead82e77994638db6e39.jpg"
+MIG_IMG = ALIVE_PIC if ALIVE_PIC else "https://te.legra.ph/file/a54c5f1aca50619d3374f.jpg"
 
 Mig_Button = [
         [
