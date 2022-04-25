@@ -7,7 +7,7 @@ from telethon import events
 from telethon import functions, types
 from telethon.tl.functions.messages import ImportChatInviteRequest as Get
 from KeshavXSpam import Mig, Mig2, Mig3, Mig4, Mig5 , Mig6, Mig7, Mig8, Mig9, Mig10, SUDO_USERS, OWNER_ID
-from resources.data import RAID, REPLYRAID, MightyX
+from resources.data import RAID, REPLYRAID, KeshavX
 from KeshavXSpam import CMD_HNDLR as hl
 
 
