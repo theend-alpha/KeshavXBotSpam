@@ -6,11 +6,11 @@ import requests
 from telethon import events
 from telethon.tl.functions.messages import ImportChatInviteRequest as Get
 
-from MightyXSpam import Mig, Mig2, Mig3, Mig4, Mig5 , Mig6, Mig7, Mig8, Mig9, Mig10, SUDO_USERS, OWNER_ID
+from KeshavXSpam import Mig, Mig2, Mig3, Mig4, Mig5 , Mig6, Mig7, Mig8, Mig9, Mig10, SUDO_USERS, OWNER_ID
 
-from MightyXSpam import CMD_HNDLR as hl
-from MightyXSpam.sql.echo_sql import addecho, get_all_echos, is_echo, remove_echo
-from resources.data import MightyX
+from KeshavXSpam import CMD_HNDLR as hl
+from KeshavXSpam.sql.echo_sql import addecho, get_all_echos, is_echo, remove_echo
+from resources.data import KeshavX
 
 
 @Mig.on(events.NewMessage(incoming=True, pattern=r"\%saddecho(?: |$)(.*)" % hl))
@@ -29,8 +29,8 @@ async def echo(event):
      if event.reply_to_msg_id is not None:
             reply_msg = await event.get_reply_message()
             user_id = reply_msg.sender_id
-            if int(user_id) in MightyX:
-                    text = f"I Can't Echo MightyX's Owner"
+            if int(user_id) in KeshavX:
+                    text = f"I Can't Echo KeshavX's Owner"
                     await event.reply(text, parse_mode=None, link_preview=None )
             elif int(user_id) == OWNER_ID:
                     text = f"This Guy is Owner Of These Bots."
