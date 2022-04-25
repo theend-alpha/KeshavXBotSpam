@@ -1,22 +1,22 @@
-# Mighty X Spam | @MightyXSpam
+# Keshav X Spam | @BTS_CHAT_ZONE
 # Keep Credits Madafaka !!
 import os
 import asyncio
 import sys
 import git
 import heroku3
-from MightyXSpam import Mig, Mig2, Mig3, Mig4, Mig5 , Mig6, Mig7, Mig8, Mig9, Mig10, OWNER_ID, SUDO_USERS, HEROKU_APP_NAME, HEROKU_API_KEY, mightyversion
-from MightyXSpam import CMD_HNDLR as hl
+from KeshavXSpam import Mig, Mig2, Mig3, Mig4, Mig5 , Mig6, Mig7, Mig8, Mig9, Mig10, OWNER_ID, SUDO_USERS, HEROKU_APP_NAME, HEROKU_API_KEY, keshavversion
+from KeshavXSpam import CMD_HNDLR as hl
 from telethon.tl.functions.users import GetFullUserRequest
-from MightyXSpam import ALIVE_NAME, ALIVE_PIC, ALIVE_TEXT
+from KeshavXSpam import ALIVE_NAME, ALIVE_PIC, ALIVE_TEXT
 from telethon import events, version, Button
 from telethon.tl.custom import button
 from time import time
 from datetime import datetime
 
-MIG_PIC = ALIVE_PIC if ALIVE_PIC else "https://telegra.ph/file/2ead82e77994638db6e39.jpg"
+MIG_PIC = ALIVE_PIC if ALIVE_PIC else "https://te.legra.ph/file/815d55d889c2b23b2e671.jpg"
 
-MIG_TEXT = ALIVE_TEXT if ALIVE_TEXT else "╚»★ 𝗠𝗶𝗴𝗵𝘁𝘆𝗫𝗦𝗽𝗮𝗺 𝗶𝘀 𝗛𝗲𝗿𝗲 ★«╝"
+MIG_TEXT = ALIVE_TEXT if ALIVE_TEXT else "╚»★ keshav𝗫𝗦𝗽𝗮𝗺 𝗶𝘀 𝗛𝗲𝗿𝗲 ★«╝"
 
 mention = f"[{ALIVE_NAME}](tg://user?id={OWNER_ID})"
                                   
@@ -41,11 +41,11 @@ async def alive(event):
       await event.client.send_file(event.chat_id,
                                   MIG_PIC, caption=f"""{MIG_TEXT}\n\n═══════════════════\n⚡ 𝐏𝐢𝐧𝐠  : `{ms}ᵐˢ`\n⚡ 𝐎𝐰𝐧𝐞𝐫 : {mention}\n⚡ 𝐌𝐢𝐠𝐡𝐭𝐲 𝐗 𝐒𝐩𝐚𝐦 : `{mightyversion}`\n⚡ 𝐏𝐲𝐭𝐡𝐨𝐧 𝐕𝐞𝐫𝐬𝐢𝐨𝐧 : `3.9.6`\n⚡ 𝐓𝐞𝐥𝐞𝐭𝐡𝐨𝐧 𝐕𝐞𝐫𝐬𝐢𝐨𝐧 : `{version.__version__}`\n═══════════════════\n\n""", buttons=[
         [
-        Button.url("✨ ᴄʜᴀɴɴᴇʟ ✨", "https://t.me/MightyXUpdates"),
-        Button.url("✨ sᴜᴘᴘᴏʀᴛ ✨", "https://t.me/MightyXSupport")
+        Button.url("✨ ᴀᴄᴄᴏᴜɴᴛ ✨", "https://t.me/NotReallyAlpha"),
+        Button.url("✨ sᴜᴘᴘᴏʀᴛ ✨", "https://t.me/BTS_CHAT_ZONE")
         ],
         [
-        Button.url("🔥 ʀᴇᴘᴏ 🔥", "https://github.com/BeingMighty/MightyXBotSpam")
+        Button.url("🔥 ʀᴇᴘᴏ 🔥", "https://github.com/theend-alpha/KeshavXBotSpam")
         ]
         ]
         )
@@ -117,7 +117,7 @@ async def ping(e):
 @Mig10.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
 async def restart(e):
     if e.sender_id in SUDO_USERS:
-        text = "𝗥𝗲𝘀𝘁𝗮𝗿𝘁𝗶𝗻𝗴 𝗬𝗼𝘂𝗿 𝗠𝗶𝗴𝗵𝘁𝘆 𝗫 𝗦𝗽𝗮𝗺... | Please Wait For Few Seconds."
+        text = "𝗥𝗲𝘀𝘁𝗮𝗿𝘁𝗶𝗻𝗴 𝗬𝗼𝘂𝗿 Keshav 𝗫 𝗦𝗽𝗮𝗺... | Please Wait For Few Seconds."
         await e.reply(text, parse_mode=None, link_preview=None)
         try:
             await Mig.disconnect()
